@@ -1,14 +1,15 @@
 import { Controller, Get } from '@nestjs/common';
+import { EmployeeService } from './services/employee/employee.service';
 
 
 @Controller()
 export class AppController {
-  @Get()
-  getHello(): string {
-    return 'Hello world';
-  }
-  @Get('world')
-  getWorld(): string {
-    return 'Hello WORLD';
+  constructor(
+    private employeeService:EmployeeService
+  ){}
+
+  @Get('api/employee')
+  getAllEmployees():Promise<Employee[]> {
+    return this.employeeService.getAll();
   }
 }
