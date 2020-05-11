@@ -50,6 +50,17 @@ export class EmployeeService {
 
     }
 
+    async getByUsername(user:string):Promise<Employee|null>{
+        const employee = await this.employee.findOne({
+            username:user
+        });
+
+        if(employee){
+            return employee;
+        }
+        return null;
+
+    }
     async editById(id:number,data:EditEmployeeDto):Promise<Employee|ApiResponse>{
         let employee= await this.employee.findOne(id);
 
@@ -59,7 +70,6 @@ export class EmployeeService {
             })
         }
 
-        
         const passwordHash=crypto.createHash('sha512');
         passwordHash.update(data.password);
         const passwordHashString = passwordHash.digest('hex').toUpperCase();

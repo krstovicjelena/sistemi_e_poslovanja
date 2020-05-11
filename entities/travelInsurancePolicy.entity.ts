@@ -6,9 +6,12 @@ import {
   ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
+  ManyToMany,
+  JoinTable,
 } from "typeorm";
 import { Client } from "./client.entity";
 import { TravelInsurancePolicyCountry } from "./travelInsurancePolicy-country.entity";
+import { Country } from "./country.entity";
 
 @Index("fk_travel_insurance_policy_client_id", ["clientId"], {})
 @Entity("travel_insurance_policy")
@@ -34,6 +37,15 @@ export class TravelInsurancePolicy {
 
   @Column( {type: "double", precision: 22 })
   price: number;
+
+  @ManyToMany(type =>Country,country=>country.policies)
+  @JoinTable({
+    name:"travel_insurance_policy_country",
+    joinColumn:{name:"travel_insurance_policy_id", referencedColumnName: "travelInsurancePolicyId"},
+    inverseJoinColumn:{name:"country_id", referencedColumnName: "countryId"}
+    
+  })
+  countries: Country[];
 
   @ManyToOne(() => Client, (client) => client.travelInsurancePolicies, {
     onDelete: "RESTRICT",

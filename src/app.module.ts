@@ -18,6 +18,9 @@ import { AccidentPolicy } from '../entities/accidentPolicy.entity';
 import { EmployeeController } from './controllers/api/employee.controller';
 import { ClientService } from './services/client/client.service';
 import { ClientController } from './controllers/api/client.controller';
+import { TravelService } from './services/travel/travel.service';
+import { TravelController } from './controllers/api/travel.controller';
+import { AuthController } from './controllers/api/auth.controller';
 
 
 @Module({
@@ -46,15 +49,22 @@ import { ClientController } from './controllers/api/client.controller';
     }),
     TypeOrmModule.forFeature([
       Employee,
-      Client
+      Client,
+      TravelInsurancePolicy,
+      TravelInsurancePolicyCountry,
+      Country
     ])
   ],
   controllers: [
     AppController,
     EmployeeController,
-    ClientController],
+    ClientController,
+    TravelController,
+  AuthController],
   providers: [
     EmployeeService,
-    ClientService],
+    ClientService,
+    TravelService
+  ],
 })
 export class AppModule {}
