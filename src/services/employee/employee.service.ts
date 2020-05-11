@@ -4,6 +4,7 @@ import { Employee } from '../../../entities/employee.entity';
 import { Repository } from 'typeorm';
 import { AddEmployeeDto } from '../../dtos/employees/add.employee.dto';
 import { EditEmployeeDto } from '../../dtos/employees/edit.employee.dto';
+import { ApiResponse } from 'src/misc/api.response.class';
 
 @Injectable()
 export class EmployeeService {
@@ -16,11 +17,18 @@ export class EmployeeService {
         return this.employee.find();
     }
 
-    getById(id:number):Promise<Employee>{
-        return this.employee.findOne(id);
+    getById(id:number):Promise<Employee|ApiResponse>{
+
+        return new Promise (async (resolve)=>{
+            let employee= await this.employee.findOne(id);
+            if(employee === undefined){
+                resolve(new ApiResponse("error",-1002,"Ne postoji administrator sa ovim id-jem"));
+            }
+            resolve(employee);
+        })
     }
 
-    add(data:AddEmployeeDto):Promise<Employee>{
+    add(data:AddEmployeeDto):Promise<Employee|ApiResponse>{
         const crypto=require('crypto');
         const passwordHash=crypto.createHash('sha512');
         passwordHash.update(data.password);
@@ -30,11 +38,25 @@ export class EmployeeService {
         newEmployee.username=data.username;
         newEmployee.passwordHash=passwordHashString;
 
-        return this.employee.save(newEmployee);
+        return new Promise ((resolve)=> {
+            this.employee.save(newEmployee)
+            .then(data=>resolve(data))
+            .catch(error=>{
+                const response: ApiResponse = new ApiResponse("error",-1001);
+                resolve(response);
+            });
+        });
+
     }
 
-    async editById(id:number,data:EditEmployeeDto):Promise<Employee>{
+    async editById(id:number,data:EditEmployeeDto):Promise<Employee|ApiResponse>{
         let employee= await this.employee.findOne(id);
+
+        if(employee === undefined){
+            return new Promise((resolve)=>{
+                resolve(new ApiResponse("error",-1002,"Ne postoji administrator sa ovim id-jem"));
+            })
+        }
 
         const crypto=require('crypto');
         const passwordHash=crypto.createHash('sha512');

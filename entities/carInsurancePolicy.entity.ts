@@ -32,16 +32,16 @@ export class CarInsurancePolicy {
   @Column( { type: "varchar", length: 128 })
   model: string;
 
-  @Column({ type: "int", name: "year_of_production", length: 4 })
+  @Column({ type: "int", name: "year_of_production"})
   yearOfProduction: number;
 
   @Column({  type: "varchar", length: 255 })
   vin: string;
 
-  @Column({ type: "int", name: "milage" , length:20})
+  @Column({ type: "int", name: "milage"})
   milage: number;
 
-  @Column({  type: "int",name: "registration_number", length: 50 })
+  @Column({  type: "int",name: "registration_number"})
   registrationNumber: string;
 
   @Column({ type: "date", name: "starts_at" })

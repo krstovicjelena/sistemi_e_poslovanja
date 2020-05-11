@@ -27,7 +27,7 @@ export class FireInsurancePolicy {
   @Column( {type: "double", precision: 22 })
   area: number;
 
-  @Column( { type: "int",name: "year_of_construction",length:4 })
+  @Column( { type: "int",name: "year_of_construction" })
   yearOfConstruction: number;
 
   @Column({ type: "text",name: "risk_assesment" })
