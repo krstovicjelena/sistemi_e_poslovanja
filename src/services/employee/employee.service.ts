@@ -5,6 +5,7 @@ import { Repository } from 'typeorm';
 import { AddEmployeeDto } from '../../dtos/employees/add.employee.dto';
 import { EditEmployeeDto } from '../../dtos/employees/edit.employee.dto';
 import { ApiResponse } from 'src/misc/api.response.class';
+import * as crypto from 'crypto';
 
 @Injectable()
 export class EmployeeService {
@@ -29,7 +30,7 @@ export class EmployeeService {
     }
 
     add(data:AddEmployeeDto):Promise<Employee|ApiResponse>{
-        const crypto=require('crypto');
+       
         const passwordHash=crypto.createHash('sha512');
         passwordHash.update(data.password);
         const passwordHashString = passwordHash.digest('hex').toUpperCase();
@@ -58,7 +59,7 @@ export class EmployeeService {
             })
         }
 
-        const crypto=require('crypto');
+        
         const passwordHash=crypto.createHash('sha512');
         passwordHash.update(data.password);
         const passwordHashString = passwordHash.digest('hex').toUpperCase();

@@ -16,6 +16,8 @@ import { TravelInsurancePolicyCountry } from '../entities/travelInsurancePolicy-
 import { TypeOfCrop } from '../entities/typeOfCrop.entity';
 import { AccidentPolicy } from '../entities/accidentPolicy.entity';
 import { EmployeeController } from './controllers/api/employee.controller';
+import { ClientService } from './services/client/client.service';
+import { ClientController } from './controllers/api/client.controller';
 
 
 @Module({
@@ -43,12 +45,16 @@ import { EmployeeController } from './controllers/api/employee.controller';
       ]
     }),
     TypeOrmModule.forFeature([
-      Employee
+      Employee,
+      Client
     ])
   ],
   controllers: [
     AppController,
-  EmployeeController],
-  providers: [EmployeeService],
+    EmployeeController,
+    ClientController],
+  providers: [
+    EmployeeService,
+    ClientService],
 })
 export class AppModule {}
