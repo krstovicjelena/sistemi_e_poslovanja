@@ -3,7 +3,7 @@ import { EmployeeService } from "../../services/employee/employee.service";
 
 import { AddEmployeeDto } from "../../dtos/employees/add.employee.dto";
 import { EditEmployeeDto } from "../../dtos/employees/edit.employee.dto";
-import { Employee } from "../../../entities/employee.entity";
+import { Employee } from "../../entities/employee.entity";
 import { ApiResponse } from "src/misc/api.response.class";
 
 

@@ -1,6 +1,6 @@
 import { Controller, Post, Body } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
-import { TravelInsurancePolicy } from "entities/travelInsurancePolicy.entity";
+import { TravelInsurancePolicy } from "src/entities/travelInsurancePolicy.entity";
 import { TravelService } from "src/services/travel/travel.service";
 import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
 
@@ -11,7 +11,7 @@ import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
     },
     params: { //mora ovako jer crud zahteva da se zove samo id
         id:{
-            field: 'travelInsurancePolicyId',
+            field: 'TravelInsurancePolicyId',
             type: 'number',
             primary: true
         }

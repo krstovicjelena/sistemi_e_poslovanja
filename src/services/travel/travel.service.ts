@@ -2,11 +2,11 @@ import { Injectable } from "@nestjs/common";
 import { TypeOrmCrudService } from "@nestjsx/crud-typeorm";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { TravelInsurancePolicy } from "entities/travelInsurancePolicy.entity";
+import { TravelInsurancePolicy } from "src/entities/travelInsurancePolicy.entity";
 import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
-import { TravelInsurancePolicyCountry } from "entities/travelInsurancePolicy-country.entity";
+import { TravelInsurancePolicyCountry } from "src/entities/travelInsurancePolicy-country.entity";
 import { ApiResponse } from "src/misc/api.response.class";
-import { Country } from "entities/country.entity";
+import { Country } from "src/entities/country.entity";
 
 @Injectable()
 export class TravelService extends TypeOrmCrudService<TravelInsurancePolicy>{

@@ -2,19 +2,19 @@ import { Module, NestModule, MiddlewareConsumer} from '@nestjs/common';
 import { AppController } from './controllers/app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { DatabaseConfiguration } from './config/database.configuration';
-import { Employee } from '../entities/employee.entity';
+import { Employee } from './entities/employee.entity';
 import { EmployeeService } from './services/employee/employee.service';
-import { CarInsurancePolicy } from '../entities/carInsurancePolicy.entity';
-import { Client } from '../entities/client.entity';
-import { Condition } from '../entities/condition.entity';
-import { Country } from '../entities/country.entity';
-import { CropInsurancePolicy } from '../entities/cropInsurancePolicy.entity';
-import { CropInsurancePolicyTypeOfCrop } from '../entities/cropInsurancePolicy-typeOfCrop.entity';
-import { FireInsurancePolicy } from '../entities/fireInsurancePolicy.entity';
-import { TravelInsurancePolicy } from '../entities/travelInsurancePolicy.entity';
-import { TravelInsurancePolicyCountry } from '../entities/travelInsurancePolicy-country.entity';
-import { TypeOfCrop } from '../entities/typeOfCrop.entity';
-import { AccidentPolicy } from '../entities/accidentPolicy.entity';
+import { CarInsurancePolicy } from './entities/carInsurancePolicy.entity';
+import { Client } from './entities/client.entity';
+import { Condition } from './entities/condition.entity';
+import { Country } from './entities/country.entity';
+import { CropInsurancePolicy } from './entities/cropInsurancePolicy.entity';
+import { CropInsurancePolicyTypeOfCrop } from './entities/cropInsurancePolicy-typeOfCrop.entity';
+import { FireInsurancePolicy } from './entities/fireInsurancePolicy.entity';
+import { TravelInsurancePolicy } from './entities/travelInsurancePolicy.entity';
+import { TravelInsurancePolicyCountry } from './entities/travelInsurancePolicy-country.entity';
+import { TypeOfCrop } from './entities/typeOfCrop.entity';
+import { AccidentPolicy } from './entities/accidentPolicy.entity';
 import { EmployeeController } from './controllers/api/employee.controller';
 import { ClientService } from './services/client/client.service';
 import { ClientController } from './controllers/api/client.controller';
@@ -22,6 +22,11 @@ import { TravelService } from './services/travel/travel.service';
 import { TravelController } from './controllers/api/travel.controller';
 import { AuthController } from './controllers/api/auth.controller';
 import { AuthMiddleware } from './middlewares/auth.middleware';
+import { FireController } from './controllers/api/fire.controller';
+import { FireService } from './services/fire/fire.service';
+import { CarController } from './controllers/api/car.controller';
+import { CarService } from './services/car/car.service';
+
 
 
 @Module({
@@ -53,7 +58,10 @@ import { AuthMiddleware } from './middlewares/auth.middleware';
       Client,
       TravelInsurancePolicy,
       TravelInsurancePolicyCountry,
-      Country
+      Country,
+      FireInsurancePolicy,
+      CarInsurancePolicy
+      
     ])
   ],
   controllers: [
@@ -61,17 +69,23 @@ import { AuthMiddleware } from './middlewares/auth.middleware';
     EmployeeController,
     ClientController,
     TravelController,
-  AuthController],
+    AuthController,
+    FireController,
+    CarController
+  ],
   providers: [
     EmployeeService,
     ClientService,
-    TravelService
+    TravelService,
+    FireService,
+    CarService
+    
   ],
   exports: [
     EmployeeService //moramo ovde da ga dodamo da bi bio dostupan AuthMiddleware dole
   ]
 })
-export class AppModule implements NestModule {
+export class AppModule implements NestModule { //jedini nacin da koristimo mw je da implementriamo nestmodule interfejs
   configure(consumer:MiddlewareConsumer) {
     consumer.apply(AuthMiddleware).exclude('auth/*').forRoutes('api/*'); 
     //primeni ovaj mw na sve rute api/*, ali nemoj na auth/* jer nikad ne bismo dobili token
