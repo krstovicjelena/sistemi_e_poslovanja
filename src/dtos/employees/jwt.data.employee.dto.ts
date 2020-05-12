@@ -5,7 +5,7 @@ export class JwtDataEmployeeDto{
     ip:string;
     ua:string;
 
-    toPlainObject(){
+    toPlainObject(){ //funkcija jwt.sign zahteva plain object kao argument
         return{
             employeeId:this.employeeId,
             username:this.username,

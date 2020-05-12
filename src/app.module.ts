@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, NestModule, MiddlewareConsumer} from '@nestjs/common';
 import { AppController } from './controllers/app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { DatabaseConfiguration } from './config/database.configuration';
@@ -21,6 +21,7 @@ import { ClientController } from './controllers/api/client.controller';
 import { TravelService } from './services/travel/travel.service';
 import { TravelController } from './controllers/api/travel.controller';
 import { AuthController } from './controllers/api/auth.controller';
+import { AuthMiddleware } from './middlewares/auth.middleware';
 
 
 @Module({
@@ -66,5 +67,14 @@ import { AuthController } from './controllers/api/auth.controller';
     ClientService,
     TravelService
   ],
+  exports: [
+    EmployeeService //moramo ovde da ga dodamo da bi bio dostupan AuthMiddleware dole
+  ]
 })
-export class AppModule {}
+export class AppModule implements NestModule {
+  configure(consumer:MiddlewareConsumer) {
+    consumer.apply(AuthMiddleware).exclude('auth/*').forRoutes('api/*'); 
+    //primeni ovaj mw na sve rute api/*, ali nemoj na auth/* jer nikad ne bismo dobili token
+
+  }
+}
