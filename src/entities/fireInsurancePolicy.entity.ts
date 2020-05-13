@@ -13,10 +13,10 @@ import { Client } from "./client.entity";
 export class FireInsurancePolicy {
   @PrimaryGeneratedColumn({
     type: "int",
-    name: "fire_insurance_policy",
+    name: "fire_insurance_policy_id",
     unsigned: true,
   })
-  fireInsurancePolicy: number;
+  fireInsurancePolicyId: number;
 
   @Column({ type: "int",name: "client_id", unsigned: true })
   clientId: number;

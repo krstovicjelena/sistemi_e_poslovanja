@@ -1,23 +1,23 @@
 import { Controller } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
-import { CarInsurancePolicy } from "src/entities/carInsurancePolicy.entity";
-import { CarService } from "src/services/car/car.service";
+import { Country } from "src/entities/country.entity";
+import { CountryService } from "src/services/country/country.service";
 
-@Controller('api/car')
+@Controller('api/country')
 @Crud({
     model:{
-        type: CarInsurancePolicy
+        type: Country
     },
     params: { //mora ovako jer crud zahteva da se zove samo id
         id:{
-            field: 'carInsurancePolicyId',
+            field: 'countryId',
             type: 'number',
             primary: true
         }
     },
     query:{
         join:{
-            client:{
+            accidentPolicies:{
                 eager:false
             }
 
@@ -29,9 +29,11 @@ import { CarService } from "src/services/car/car.service";
             "createManyBase",
             "getManyBase",
             "getOneBase"
+          
+           
         ]
     }
 })
-export class CarController{
-    constructor(public service: CarService){}
+export class CountryController{
+    constructor(public service: CountryService){}
 }

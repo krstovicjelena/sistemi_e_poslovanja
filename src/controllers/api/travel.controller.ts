@@ -11,11 +11,19 @@ import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
     },
     params: { //mora ovako jer crud zahteva da se zove samo id
         id:{
-            field: 'TravelInsurancePolicyId',
+            field: 'travelInsurancePolicyId',
             type: 'number',
             primary: true
         }
     },
+    routes:{
+        only:[
+            "createOneBase",
+            "createManyBase",
+            "getManyBase",
+            "getOneBase"
+        ]
+    }
    
     
 })

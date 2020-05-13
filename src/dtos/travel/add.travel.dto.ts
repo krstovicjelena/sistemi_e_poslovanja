@@ -1,7 +1,6 @@
 
 
 export class AddTravelPolicyDto{
-    travelInsurancePolicyId:number
     clientId:number;
     startsAt:string;
     expiresAt:string;

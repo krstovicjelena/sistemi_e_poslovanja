@@ -22,6 +22,15 @@ import { FireService } from "src/services/fire/fire.service";
                 eager:true
             }
         }
+        
+},
+routes:{
+    only:[
+        "createOneBase",
+        "createManyBase",
+        "getManyBase",
+        "getOneBase"
+    ]
 }
     
 })

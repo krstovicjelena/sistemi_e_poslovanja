@@ -26,6 +26,16 @@ import { FireController } from './controllers/api/fire.controller';
 import { FireService } from './services/fire/fire.service';
 import { CarController } from './controllers/api/car.controller';
 import { CarService } from './services/car/car.service';
+import { AccidentService } from './services/accident/accident.service';
+import { AccidentController } from './controllers/api/accident.controller';
+import { CropController } from './controllers/api/crop.controller';
+import { CropService } from './services/crop/crop.service';
+import { ConditionService } from './services/condition/condition.service';
+import { ConditionController } from './controllers/api/condition.controller';
+import { CountryController } from './controllers/api/country.controller';
+import { TypeOfCropController } from './controllers/api/typeOfcrop.controller';
+import { CountryService } from './services/country/country.service';
+import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
 
 
 
@@ -55,12 +65,17 @@ import { CarService } from './services/car/car.service';
     }),
     TypeOrmModule.forFeature([
       Employee,
-      Client,
-      TravelInsurancePolicy,
-      TravelInsurancePolicyCountry,
-      Country,
-      FireInsurancePolicy,
-      CarInsurancePolicy
+        CarInsurancePolicy,
+        Client,
+        Condition,
+        Country,
+        CropInsurancePolicy,
+        CropInsurancePolicyTypeOfCrop,
+        FireInsurancePolicy,
+        TravelInsurancePolicy,
+        TravelInsurancePolicyCountry,
+        TypeOfCrop,
+        AccidentPolicy
       
     ])
   ],
@@ -71,14 +86,24 @@ import { CarService } from './services/car/car.service';
     TravelController,
     AuthController,
     FireController,
-    CarController
+    CarController,
+    AccidentController,
+    CropController,
+    ConditionController,
+    CountryController,
+    TypeOfCropController
   ],
   providers: [
     EmployeeService,
     ClientService,
     TravelService,
     FireService,
-    CarService
+    CarService,
+    AccidentService,
+    CropService,
+    ConditionService,
+    CountryService,
+    TypeOfCropService
     
   ],
   exports: [

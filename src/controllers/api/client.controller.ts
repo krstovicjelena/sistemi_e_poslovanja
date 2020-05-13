@@ -22,6 +22,14 @@ import { ClientService } from "src/services/client/client.service";
             }
 
         }
+    },
+    routes:{
+        only:[
+            "createOneBase",
+            "createManyBase",
+            "getManyBase",
+            "getOneBase"
+        ]
     }
 })
 export class ClientController{
