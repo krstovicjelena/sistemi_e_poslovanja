@@ -19,8 +19,6 @@ import { AddCropPolicyDto } from "src/dtos/crop/add.crop.dto";
     },
     routes:{
         only:[ //dopustanje samo odredjenih ruta a ne svih koje pruza crud
-            "createOneBase",
-            "createManyBase",
             "getManyBase",
             "getOneBase"
         ]

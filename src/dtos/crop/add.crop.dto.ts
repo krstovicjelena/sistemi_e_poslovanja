@@ -1,5 +1,5 @@
 export class AddCropPolicyDto{
-    clientId:number;
+    umcn:string;
     startsAt:string;
     expiresAt:string;
     price:number;

@@ -7,20 +7,29 @@ import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
 import { TravelInsurancePolicyCountry } from "src/entities/travelInsurancePolicy-country.entity";
 import { ApiResponse } from "src/misc/api.response.class";
 import { Country } from "src/entities/country.entity";
+import { Client } from "src/entities/client.entity";
 
 @Injectable()
 export class TravelService extends TypeOrmCrudService<TravelInsurancePolicy>{
     constructor(
         @InjectRepository(TravelInsurancePolicy) private readonly travel: Repository<TravelInsurancePolicy>,
-        @InjectRepository(Country) private readonly country: Repository<Country>,
+        @InjectRepository(Client) private readonly client: Repository<Client>,
         @InjectRepository(TravelInsurancePolicyCountry) private readonly tipCountry: Repository<TravelInsurancePolicyCountry> // mora da se evidentira u app modulu svaki repoziturijum
     ){
         super(travel); //moramo da ga prosledimo super klasi TypeOrmCrudService
     }
 
    async createfullTravelPolicy(data:AddTravelPolicyDto):Promise<TravelInsurancePolicy|ApiResponse>{
+    let c= await this.client.findOne({where:{umcn:data.umcn}});
+        
+    if(c === undefined){
+        return new Promise((resolve)=>{
+            resolve(new ApiResponse("error",-1004,"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem"));
+        })
+    }
+
        let newTravelPolicy:TravelInsurancePolicy = new TravelInsurancePolicy();
-       newTravelPolicy.clientId = data.clientId;
+       newTravelPolicy.clientId = c.clientId;
        newTravelPolicy.startsAt = data.startsAt;
        newTravelPolicy.expiresAt = data.expiresAt;
        newTravelPolicy.condition = data.condition;

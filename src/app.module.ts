@@ -91,7 +91,8 @@ import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
     CropController,
     ConditionController,
     CountryController,
-    TypeOfCropController
+    TypeOfCropController,
+    
   ],
   providers: [
     EmployeeService,
@@ -103,7 +104,8 @@ import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
     CropService,
     ConditionService,
     CountryService,
-    TypeOfCropService
+    TypeOfCropService,
+   
     
   ],
   exports: [
@@ -112,7 +114,7 @@ import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
 })
 export class AppModule implements NestModule { //jedini nacin da koristimo mw je da implementriamo nestmodule interfejs
   configure(consumer:MiddlewareConsumer) {
-    consumer.apply(AuthMiddleware).exclude('auth/*').forRoutes('api/*'); 
+    consumer.apply(AuthMiddleware)//.exclude('auth/*').forRoutes('api/*'); 
     //primeni ovaj mw na sve rute api/*, ali nemoj na auth/* jer nikad ne bismo dobili token
 
   }

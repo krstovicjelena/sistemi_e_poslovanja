@@ -18,8 +18,7 @@ import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
     },
     routes:{
         only:[
-            "createOneBase",
-            "createManyBase",
+            
             "getManyBase",
             "getOneBase"
         ]

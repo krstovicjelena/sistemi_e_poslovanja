@@ -1,7 +1,9 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Put, Body } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { AccidentPolicy } from "src/entities/accidentPolicy.entity";
 import { AccidentService } from "src/services/accident/accident.service";
+import { AddAccidentDto } from "src/dtos/accident/add.accident.dto";
+import { ApiResponse } from "src/misc/api.response.class";
 
 @Controller('api/accident')
 @Crud({
@@ -17,8 +19,6 @@ import { AccidentService } from "src/services/accident/accident.service";
 
     routes:{
         only:[
-            "createOneBase",
-            "createManyBase",
             "getManyBase",
             "getOneBase"
         ]
@@ -27,8 +27,12 @@ import { AccidentService } from "src/services/accident/accident.service";
 export class AccidentController{
     constructor(public service:AccidentService){}
 
-    @Get()
-    getAll():Promise<AccidentPolicy[]>{
-        return this.service.getAll();
+   
+
+
+    @Put()
+    add(@Body() data:AddAccidentDto): Promise<AccidentPolicy|ApiResponse>{
+        return this.service.createFullAccident(data);
+
     }
 }

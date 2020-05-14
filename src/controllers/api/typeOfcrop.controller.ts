@@ -28,7 +28,8 @@ import { TypeOfCropService } from "src/services/typeOfCrop/typeOfCrop.service";
             "createOneBase",
             "createManyBase",
             "getManyBase",
-            "getOneBase"
+            "getOneBase",
+            "updateOneBase"
           
            
         ]

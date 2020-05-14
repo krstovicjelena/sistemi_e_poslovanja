@@ -1,7 +1,9 @@
-import { Controller } from "@nestjs/common";
+import { Controller, Put, Body } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { CarInsurancePolicy } from "src/entities/carInsurancePolicy.entity";
 import { CarService } from "src/services/car/car.service";
+import { AddCarDto } from "src/dtos/car/add.car.dto";
+import { ApiResponse } from "src/misc/api.response.class";
 
 @Controller('api/car')
 @Crud({
@@ -25,8 +27,6 @@ import { CarService } from "src/services/car/car.service";
     },
     routes:{
         only:[
-            "createOneBase",
-            "createManyBase",
             "getManyBase",
             "getOneBase"
         ]
@@ -34,4 +34,9 @@ import { CarService } from "src/services/car/car.service";
 })
 export class CarController{
     constructor(public service: CarService){}
+    @Put()
+    add(@Body() data:AddCarDto): Promise<CarInsurancePolicy|ApiResponse>{
+        return this.service.createFullCar(data);
+
+    }
 }

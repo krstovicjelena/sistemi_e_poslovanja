@@ -1,7 +1,9 @@
-import { Controller } from "@nestjs/common";
+import { Controller, Put, Body } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { FireInsurancePolicy } from "src/entities/fireInsurancePolicy.entity";
 import { FireService } from "src/services/fire/fire.service";
+import { AddFireDto } from "src/dtos/fire/add.fire.dto";
+import { ApiResponse } from "src/misc/api.response.class";
 
 
 @Controller('api/fire')
@@ -26,8 +28,6 @@ import { FireService } from "src/services/fire/fire.service";
 },
 routes:{
     only:[
-        "createOneBase",
-        "createManyBase",
         "getManyBase",
         "getOneBase"
     ]
@@ -37,5 +37,9 @@ routes:{
 export class FireController{
     constructor(public service: FireService){}
 
-   
+    @Put()
+    add(@Body() data:AddFireDto): Promise<FireInsurancePolicy|ApiResponse>{
+        return this.service.createFullFire(data);
+
+    }
 }

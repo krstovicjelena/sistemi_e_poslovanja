@@ -28,7 +28,9 @@ import { CountryService } from "src/services/country/country.service";
             "createOneBase",
             "createManyBase",
             "getManyBase",
-            "getOneBase"
+            "getOneBase",
+            "updateOneBase",
+            
           
            
         ]

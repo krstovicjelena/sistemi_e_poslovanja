@@ -1,7 +1,7 @@
 
 
 export class AddTravelPolicyDto{
-    clientId:number;
+    umcn:string;
     startsAt:string;
     expiresAt:string;
     condition:string;

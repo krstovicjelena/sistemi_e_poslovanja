@@ -1,7 +1,10 @@
-import { Controller } from "@nestjs/common";
+import { Controller, Put, Body, Post, Param, Patch } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { Client } from "src/entities/client.entity";
 import { ClientService } from "src/services/client/client.service";
+import { AddClientDto } from "src/dtos/client/add.client.dto";
+import { ApiResponse } from "src/misc/api.response.class";
+import { EditClientDto } from "src/dtos/client/edit.client.dto";
 
 @Controller('api/client')
 @Crud({
@@ -34,4 +37,15 @@ import { ClientService } from "src/services/client/client.service";
 })
 export class ClientController{
     constructor(public service: ClientService){}
+
+    @Put()
+    add(@Body() data:AddClientDto): Promise<Client|ApiResponse>{
+        return this.service.createClient(data);
+
+    }
+
+    @Patch(':id')
+    edit(@Param('id') id:number, @Body() data:EditClientDto):Promise<Client|ApiResponse>{
+        return this.service.editById(id,data);
+    }
 }
