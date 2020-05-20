@@ -1,0 +1,4854 @@
+{
+	"info": {
+		"_postman_id": "0e42aae0-56b9-461c-9812-bbd0d0f6986e",
+		"name": "Veb servis aplikacije",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get all employees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDk0NDI1LjYzMSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTI4NDgyNX0.uhSUlzopxBDEjjPVsWIXFe5UzX8YBFWFCf7Ave7Vmxs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/employee/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all employees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "376"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"178-v6VhJmRXN1RMXm5zIv2Vdnn5nxE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 16:42:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"employeeId\": 1,\n        \"username\": \"jelena\",\n        \"passwordHash\": \"b816b425b12eaa2dd76834f464b3e3130696370e9d8016928dccf7288f2f231152d0f004d801b9a5d3f2bd39878a9bbd1150352944d09348f9fd4d27e8c94ce9\\r\\n\"\n    },\n    {\n        \"employeeId\": 2,\n        \"username\": \"nemanja\",\n        \"passwordHash\": \"9a6d124632754e72cef231195d8f4b049743df4e150d884af6aa7cfe3ae424e0e7816c8426fdca36b5ec383a6d8ac7c2659896eb42e9ea7c501edae8e7245e42\\r\\n\"\n    }\n]"
+						},
+						{
+							"name": "Get all employees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "927"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39f-fY/YcEsX8QS7pM17VCAhIvLfTgM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:14:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"employeeId\": 1,\n        \"username\": \"jelena\",\n        \"passwordHash\": \"4FEB75CC3114D98D990D3074DBC11E81C36FE02E1269AFB3B36ABCB2BC6EBC50B3DC0569569C16D838FF3D02E4F886A636D49A15C1E9FCA35660FFC2046B05D6\"\n    },\n    {\n        \"employeeId\": 2,\n        \"username\": \"nemanja\",\n        \"passwordHash\": \"9a6d124632754e72cef231195d8f4b049743df4e150d884af6aa7cfe3ae424e0e7816c8426fdca36b5ec383a6d8ac7c2659896eb42e9ea7c501edae8e7245e42\\r\\n\"\n    },\n    {\n        \"employeeId\": 3,\n        \"username\": \"akrstovic\",\n        \"passwordHash\": \"9D1B1DB471F692E6736119A0AF99BF5E20D4DB137E75A6665DDDABE58DBACB2A35A2B5A726D4D66C15F3B17B72193EB79C513CCFD377F47164C261837EC0AF87\"\n    },\n    {\n        \"employeeId\": 5,\n        \"username\": \"mmilic\",\n        \"passwordHash\": \"2873B9E1758A7AB8AA699E759EE527C0B5D67BC2EC2EFCECD4ED1571F553FE3B4A2AD9660E04B09737F2B30E233F52F50238D02D7488C529F794CEE74D4D8343\"\n    },\n    {\n        \"employeeId\": 7,\n        \"username\": \"vkrstovic\",\n        \"passwordHash\": \"A82F487B203A97EB2D2B0B7477D08939AFC8F7D1705DDFACCC1DC73A35AC1E4CEE858F1F1448A9BA2D209BEBD702BA63B8D0BBD3D125A9C5A02BA0AF5D72235A\"\n    }\n]"
+						},
+						{
+							"name": "Get all employees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDk0NDI1LjYzMSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTI4NDgyNX0.uhSUlzopxBDEjjPVsWIXFe5UzX8YBFWFCf7Ave7Vmxs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1109"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"455-tRp5W6PCDkrRCyq7FQ2d76izGwY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 May 2020 12:01:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"employeeId\": 1,\n        \"username\": \"jelena\",\n        \"passwordHash\": \"4FEB75CC3114D98D990D3074DBC11E81C36FE02E1269AFB3B36ABCB2BC6EBC50B3DC0569569C16D838FF3D02E4F886A636D49A15C1E9FCA35660FFC2046B05D6\"\n    },\n    {\n        \"employeeId\": 2,\n        \"username\": \"nemanja\",\n        \"passwordHash\": \"9a6d124632754e72cef231195d8f4b049743df4e150d884af6aa7cfe3ae424e0e7816c8426fdca36b5ec383a6d8ac7c2659896eb42e9ea7c501edae8e7245e42\\r\\n\"\n    },\n    {\n        \"employeeId\": 3,\n        \"username\": \"akrstovic\",\n        \"passwordHash\": \"9D1B1DB471F692E6736119A0AF99BF5E20D4DB137E75A6665DDDABE58DBACB2A35A2B5A726D4D66C15F3B17B72193EB79C513CCFD377F47164C261837EC0AF87\"\n    },\n    {\n        \"employeeId\": 5,\n        \"username\": \"mmilic\",\n        \"passwordHash\": \"2873B9E1758A7AB8AA699E759EE527C0B5D67BC2EC2EFCECD4ED1571F553FE3B4A2AD9660E04B09737F2B30E233F52F50238D02D7488C529F794CEE74D4D8343\"\n    },\n    {\n        \"employeeId\": 7,\n        \"username\": \"vkrstovic\",\n        \"passwordHash\": \"A82F487B203A97EB2D2B0B7477D08939AFC8F7D1705DDFACCC1DC73A35AC1E4CEE858F1F1448A9BA2D209BEBD702BA63B8D0BBD3D125A9C5A02BA0AF5D72235A\"\n    },\n    {\n        \"employeeId\": 8,\n        \"username\": \"admin\",\n        \"passwordHash\": \"C7AD44CBAD762A5DA0A452F9E854FDC1E0E7A52A38015F23F3EAB1D80B931DD472634DFAC71CD34EBC35D16AB7FB8A90C81F975113D6C7538DC69DD8DE9077EC\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a single employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a single employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-MUeN1X5nWoz9CwkzlmsOVjEv3vQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 16:49:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 1,\n    \"username\": \"jelena\",\n    \"passwordHash\": \"b816b425b12eaa2dd76834f464b3e3130696370e9d8016928dccf7288f2f231152d0f004d801b9a5d3f2bd39878a9bbd1150352944d09348f9fd4d27e8c94ce9\\r\\n\"\n}"
+						},
+						{
+							"name": "Get a single employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-MUeN1X5nWoz9CwkzlmsOVjEv3vQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 16:49:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 1,\n    \"username\": \"jelena\",\n    \"passwordHash\": \"b816b425b12eaa2dd76834f464b3e3130696370e9d8016928dccf7288f2f231152d0f004d801b9a5d3f2bd39878a9bbd1150352944d09348f9fd4d27e8c94ce9\\r\\n\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get a non-existing employee",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/employee/155",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								"155"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a non-existing employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/employee/155",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"155"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"59-njdt3wgOFFyT/d8dsGXoKbxhREU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:25:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1002,\n    \"message\": \"Ne postoji administrator sa ovim id-jem\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new employee - failed",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"mmilic\",\n\t\"password\": \"sifrica\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/employee/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new employee - failed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"mmilic\",\n\t\"password\": \"sifrica\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-t4k/9UI9MQaVcBQ68YkMUdFYBok\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1001,\n    \"message\": null\n}"
+						},
+						{
+							"name": "Add a new employee - failed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"mmilic\",\n\t\"password\": \"sifrica\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-t4k/9UI9MQaVcBQ68YkMUdFYBok\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1001,\n    \"message\": null\n}"
+						},
+						{
+							"name": "Add a new employee",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"akrstovic\",\n\t\"password\": \"nekaLozinka\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-DkIFmUYv90pTiiF7Pen9ndJYe4s\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 16:53:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"akrstovic\",\n    \"passwordHash\": \"9D1B1DB471F692E6736119A0AF99BF5E20D4DB137E75A6665DDDABE58DBACB2A35A2B5A726D4D66C15F3B17B72193EB79C513CCFD377F47164C261837EC0AF87\",\n    \"employeeId\": 3\n}"
+						},
+						{
+							"name": "Add a new employee",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"mmilic\",\n\t\"password\": \"sifrica\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-t4k/9UI9MQaVcBQ68YkMUdFYBok\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1001,\n    \"message\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new employee - success",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"vkrstovic\",\n\t\"password\": \"SifrdifbdgnksaA\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/employee/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new employee - failed",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"mmilic\",\n\t\"password\": \"sifrica\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-t4k/9UI9MQaVcBQ68YkMUdFYBok\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1001,\n    \"message\": null\n}"
+						},
+						{
+							"name": "Add a new employee - success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"vkrstovic\",\n\t\"password\": \"SifrdifbdgnksaA\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-RPFv2JRhCYfOYmdCYW0nj4trqTU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:10:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"vkrstovic\",\n    \"passwordHash\": \"A82F487B203A97EB2D2B0B7477D08939AFC8F7D1705DDFACCC1DC73A35AC1E4CEE858F1F1448A9BA2D209BEBD702BA63B8D0BBD3D125A9C5A02BA0AF5D72235A\",\n    \"employeeId\": 7\n}"
+						},
+						{
+							"name": "Add a new employee - success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\": \"vkrstovic\",\n\t\"password\": \"SifrdifbdgnksaA\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-RPFv2JRhCYfOYmdCYW0nj4trqTU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:10:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"vkrstovic\",\n    \"passwordHash\": \"A82F487B203A97EB2D2B0B7477D08939AFC8F7D1705DDFACCC1DC73A35AC1E4CEE858F1F1448A9BA2D209BEBD702BA63B8D0BBD3D125A9C5A02BA0AF5D72235A\",\n    \"employeeId\": 7\n}"
+						},
+						{
+							"name": "Add a new employee",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"akrstovic\",\n\t\"password\": \"nekaLozinka\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b9-DkIFmUYv90pTiiF7Pen9ndJYe4s\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 16:53:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"akrstovic\",\n    \"passwordHash\": \"9D1B1DB471F692E6736119A0AF99BF5E20D4DB137E75A6665DDDABE58DBACB2A35A2B5A726D4D66C15F3B17B72193EB79C513CCFD377F47164C261837EC0AF87\",\n    \"employeeId\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit an employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\":\"NekaNovaLozinkaZaKorisnikaJelena\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit an employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\":\"NekaNovaLozinkaZaKorisnikaJelena\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-H//+Tizsqj9c97I8AzO4uPhlVdc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:12:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 1,\n    \"username\": \"jelena\",\n    \"passwordHash\": \"4FEB75CC3114D98D990D3074DBC11E81C36FE02E1269AFB3B36ABCB2BC6EBC50B3DC0569569C16D838FF3D02E4F886A636D49A15C1E9FCA35660FFC2046B05D6\"\n}"
+						},
+						{
+							"name": "Edit an employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\":\"NekaNovaLozinkaZaKorisnikaJelena\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-H//+Tizsqj9c97I8AzO4uPhlVdc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:12:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 1,\n    \"username\": \"jelena\",\n    \"passwordHash\": \"4FEB75CC3114D98D990D3074DBC11E81C36FE02E1269AFB3B36ABCB2BC6EBC50B3DC0569569C16D838FF3D02E4F886A636D49A15C1E9FCA35660FFC2046B05D6\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit a non-existing employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\":\"sdusafhjksdpogvsngjcafghdfhjfsiodf\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/employee/548",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employee",
+								"548"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit a non-existing employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"password\":\"sdusafhjksdpogvsngjcafghdfhjfsiodf\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/employee/548",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"employee",
+										"548"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "89"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"59-njdt3wgOFFyT/d8dsGXoKbxhREU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 17:20:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1002,\n    \"message\": \"Ne postoji administrator sa ovim id-jem\"\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDk1MTk2LjA1MywiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTI4NTU5Nn0.wA7DaMgBs5bCEsyF43_5uUZ4y0Spa3D9dIoFfepEFxU",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8aa17e6a-2dac-457e-8601-f6bbc129a372",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a9efc569-4701-42f7-8fb7-67067363c56f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Get all clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all clients",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/client",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "337"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"151-Zs1UKUyFMiockEXdC73tIB26pkM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 18:38:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    },\n    {\n        \"clientId\": 2,\n        \"umcn\": \"2609997789976\",\n        \"forename\": \"Nemanja\",\n        \"surname\": \"Milutinovic\",\n        \"phone\": \"06399776655\",\n        \"email\": \"mnemanja@gmail.com\",\n        \"address\": \"Nemanjina 45 Obrenovac\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get a single client",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a single client",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/client/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a6-rugVkgTYrQiCKKHri7tRQAWlNM0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 18:40:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clientId\": 1,\n    \"umcn\": \"1509997787978\",\n    \"forename\": \"Jelena\",\n    \"surname\": \"Krstovic\",\n    \"phone\": \"06388997744\",\n    \"email\": \"kjelena@gmail.com\",\n    \"address\": \"Neznanog junka 15 Beograd\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all clients accident policies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client/?join=accidentPolicies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								""
+							],
+							"query": [
+								{
+									"key": "join",
+									"value": "accidentPolicies"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all clients accident policies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/client/?join=accidentPolicies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client",
+										""
+									],
+									"query": [
+										{
+											"key": "join",
+											"value": "accidentPolicies"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "910"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38e-0sUIWfby7DBK2BOhCnqv4v2EP0U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 21:10:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\",\n        \"accidentPolicies\": [\n            {\n                \"accidentPolicyId\": 1,\n                \"clientId\": 1,\n                \"startsAt\": \"2020-05-20\",\n                \"expiresAt\": \"2020-12-27\",\n                \"price\": 1580,\n                \"condition\": \"Specijalan popust od 50% ukoliko ne bude dodatnih steta\"\n            }\n        ]\n    },\n    {\n        \"clientId\": 2,\n        \"umcn\": \"2609997789976\",\n        \"forename\": \"Nemanja\",\n        \"surname\": \"Milutinovic\",\n        \"phone\": \"06399776655\",\n        \"email\": \"mnemanja@gmail.com\",\n        \"address\": \"Nemanjina 45 Obrenovac\",\n        \"accidentPolicies\": [\n            {\n                \"accidentPolicyId\": 2,\n                \"clientId\": 2,\n                \"startsAt\": \"2020-05-28\",\n                \"expiresAt\": \"2021-02-21\",\n                \"price\": 22850,\n                \"condition\": \"Ukoliko klijent isplati celokupan iznos u kesu dobija popust od 20%\"\n            },\n            {\n                \"accidentPolicyId\": 3,\n                \"clientId\": 2,\n                \"startsAt\": \"2020-05-25\",\n                \"expiresAt\": \"2024-05-18\",\n                \"price\": 125899,\n                \"condition\": \"Ukoliko klijent isplati celokupan iznos u kesu dobija popust od 10%\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add client ",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"umcn\":\"2210015124578\",\n\t\"forename\":\"Feli\",\n\t\"surname\":\"Milutinovic\",\n\t\"phone\":\"065997788\",\n\t\"email\":\"fele@gmail.com\",\n\t\"address\":\"Nemanjina 66 Obrenovac\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add client ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"umcn\":\"2210015124578\",\n\t\"forename\":\"Feli\",\n\t\"surname\":\"Milutinovic\",\n\t\"phone\":\"065997788\",\n\t\"email\":\"fele@gmail.com\",\n\t\"address\":\"Nemanjina 66 Obrenovac\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/client",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9f-AFnQV/sUuOg1ePGrairy30LCwhk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:25:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"umcn\": \"2210015124578\",\n    \"forename\": \"Feli\",\n    \"surname\": \"Milutinovic\",\n    \"phone\": \"065997788\",\n    \"email\": \"fele@gmail.com\",\n    \"address\": \"Nemanjina 66 Obrenovac\",\n    \"clientId\": 3\n}"
+						},
+						{
+							"name": "Add client - falied",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"umcn\":\"2210015124578\",\n\t\"forename\":\"Feli\",\n\t\"surname\":\"Milutinovic\",\n\t\"phone\":\"065997788\",\n\t\"email\":\"fele@gmail.com\",\n\t\"address\":\"Nemanjina 66 Obrenovac\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/client",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5f-slwsG2MJKF0f6RxOL3B0HILwQcM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:35:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Vec postoji klijent sa unetim maticnim brojem\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit client",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"surname\":\"Felic\",\n\t\"phone\":\"065997788\",\n\t \"email\": \"feli@gmail.com\",\n    \"address\": \"Nemanjina 70 Obrenovac\"\n\t\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/client/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit client",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"surname\":\"Felic\",\n\t\"phone\":\"065997788\",\n\t \"email\": \"feli@gmail.com\",\n    \"address\": \"Nemanjina 70 Obrenovac\"\n\t\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/client/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client",
+										"3"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"99-4ernBf7iy4D8FpvnezI9ufsiRUg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:41:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clientId\": 3,\n    \"umcn\": \"2210015124578\",\n    \"forename\": \"Feli\",\n    \"surname\": \"Felic\",\n    \"phone\": \"065997788\",\n    \"email\": \"feli@gmail.com\",\n    \"address\": \"Nemanjina 70 Obrenovac\"\n}"
+						},
+						{
+							"name": "Edit client - failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"surname\":\"Felic\",\n\t\"phone\":\"065997788\",\n\t \"email\": \"feli@gmail.com\",\n    \"address\": \"Nemanjina 70 Obrenovac\"\n\t\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/client/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"client",
+										"6"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-0Ka1ED0G4YQWI0pkQ0LgQquJ4KE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:41:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1002,\n    \"message\": \"Ne postoji klijent sa ovim id-jem\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Travel Policy",
+			"item": [
+				{
+					"name": "Create full travel policy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"umcn\" : \"15099977879444\",\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting_point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/travel/createFull",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"travel",
+								"createFull"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create full travel policy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\" : 1,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting-point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/travel/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"132-JQY3RMfAtOKM2XZ7WaC7oFTf1Ig\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 20:45:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"travelInsurancePolicyId\": 2,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"condition\": \"Neki uslov\",\n    \"price\": 15896,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    }\n}"
+						},
+						{
+							"name": "Create full travel policy and client doesnt exist in database",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\" : \"1234567891234\",\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting_point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/travel/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-POMUQrqPksGPX5WsMrnvwtxt4uU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 10:18:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem\"\n}"
+						},
+						{
+							"name": "Create full travel policy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\" : 1,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting_point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/travel/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "633"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"279-DW0mM6Pf1UPlHzb87sh149GEXuI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 21:10:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"travelInsurancePolicyId\": 6,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"condition\": \"Neki uslov\",\n    \"price\": 15896,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    },\n    \"countries\": [\n        {\n            \"countryId\": 2,\n            \"name\": \"Bosna i Hercegovina\"\n        },\n        {\n            \"countryId\": 1,\n            \"name\": \"Srbija\"\n        }\n    ],\n    \"travelInsurancePolicyCountries\": [\n        {\n            \"travelInsurancePolicyCountryId\": 11,\n            \"travelInsurancePolicyId\": 6,\n            \"countryId\": 2,\n            \"type\": \"transit\"\n        },\n        {\n            \"travelInsurancePolicyCountryId\": 12,\n            \"travelInsurancePolicyId\": 6,\n            \"countryId\": 1,\n            \"type\": \"starting_point\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Create full travel policy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\" : 1,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting_point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/travel/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "617"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"269-7JCa8bKP5ApLzNlUKR4E7AKYrhM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 21:01:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"travelInsurancePolicyId\": 4,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"condition\": \"Neki uslov\",\n    \"price\": 15896,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    },\n    \"countries\": [\n        {\n            \"countryId\": 2,\n            \"name\": \"Bosna i Hercegovina\"\n        },\n        {\n            \"countryId\": 1,\n            \"name\": \"Srbija\"\n        }\n    ],\n    \"travelInsurancePolicyCountries\": [\n        {\n            \"travelInsurancePolicyCountryId\": 7,\n            \"travelInsurancePolicyId\": 4,\n            \"countryId\": 2,\n            \"type\": \"transit\"\n        },\n        {\n            \"travelInsurancePolicyCountryId\": 8,\n            \"travelInsurancePolicyId\": 4,\n            \"countryId\": 1,\n            \"type\": \"\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Create full travel policy with checked umcn and client exists in database",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\" : \"1509997787978\",\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"countries\" : [\r\n        {\"countryId\":2, \"type\":\"transit\"},\r\n        {\"countryId\":1, \"type\":\"starting_point\"}\r\n    ]\r\n\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/travel/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "633"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"279-YzjGhFAezTvYAhooXhs3HnhO/bk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 10:19:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"travelInsurancePolicyId\": 8,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"condition\": \"Neki uslov\",\n    \"price\": 15896,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    },\n    \"countries\": [\n        {\n            \"countryId\": 2,\n            \"name\": \"Bosna i Hercegovina\"\n        },\n        {\n            \"countryId\": 1,\n            \"name\": \"Srbija\"\n        }\n    ],\n    \"travelInsurancePolicyCountries\": [\n        {\n            \"travelInsurancePolicyCountryId\": 15,\n            \"travelInsurancePolicyId\": 8,\n            \"countryId\": 2,\n            \"type\": \"transit\"\n        },\n        {\n            \"travelInsurancePolicyCountryId\": 16,\n            \"travelInsurancePolicyId\": 8,\n            \"countryId\": 1,\n            \"type\": \"starting_point\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all travel policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/travel/250",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"travel",
+								"250"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all travel policies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/travel",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1049"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"419-p8KMadwnMuRBzZQ78t1mKD0V/nE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:45:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"travelInsurancePolicyId\": 1,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 2,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 3,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 4,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 5,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 6,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 7,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    },\n    {\n        \"travelInsurancePolicyId\": 8,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"condition\": \"Neki uslov\",\n        \"price\": 15896\n    }\n]"
+						},
+						{
+							"name": "Get a single travel policy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/travel/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"travel",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-H3WaoVmCEiryfIN7VvSd8H4W4qs\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:45:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"travelInsurancePolicyId\": 2,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"condition\": \"Neki uslov\",\n    \"price\": 15896\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login - ok",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-j9hsypfgs7yZVpLxe+dRXenMY6M\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 22:23:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 8,\n    \"username\": \"admin\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDQ1Mzk4LjIzMSwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTIzNTc5OH0.GAAm8K6ngWMvs5ofD0ubWqw4oHPuIVmrFE0J_H_emds\"\n}"
+						},
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "278"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"116-KhBHbeRib+nmjglPCYDP2CyFELI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 May 2020 11:47:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"employeeId\": 8,\n    \"username\": \"admin\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDkzNjU4LjI2MiwiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTI4NDA1OH0.BDXye6R1sbg3eU07RFNuGCI9jIjHJ70PRVYyhPpHN7c\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login - invalid password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin1\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login - invalid password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin1\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-J33uEjqQB9ifLhFWUmuxamUa1u8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 22:27:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -3002,\n    \"message\": \"Nije dobar password\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login - invalid username",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"admin1\",\n\t\"password\":\"admin\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login - invalid username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"admin1\",\n\t\"password\":\"admin\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"49-Oi9VgTKgMIlzamQqYVt6BXPuTsg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 22:28:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -3001,\n    \"message\": \"Nije prnadjem zaposleni\"\n}"
+						},
+						{
+							"name": "Login - invalid password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\":\"admin\",\n\t\"password\":\"admin1\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-J33uEjqQB9ifLhFWUmuxamUa1u8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 May 2020 22:27:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -3002,\n    \"message\": \"Nije dobar password\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Fire Policy",
+			"item": [
+				{
+					"name": "Get all fire policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/fire/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"fire",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a single fire policy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/fire/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"fire",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "424"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a8-JLZMnudh+Ihn8Oxef7/Td2jtMTs\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 11:43:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fireInsurancePolicyId\": 1,\n    \"clientId\": 1,\n    \"address\": \"Nemanjina 31 \",\n    \"area\": 150,\n    \"yearOfConstruction\": 2008,\n    \"riskAssesment\": \"80%\",\n    \"startsAt\": \"2020-05-27\",\n    \"expiresAt\": \"2024-01-11\",\n    \"condition\": \"Osiguranje ne pokriva stetu izazvanu namerno \",\n    \"price\": 15000,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    }\n}"
+						},
+						{
+							"name": "Get all fire policies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/fire",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"fire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "865"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"361-za8u1BUAMSgrLQzVZLkKvUzkaFc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 May 2020 17:49:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"fireInsurancePolicyId\": 1,\n        \"clientId\": 1,\n        \"address\": \"Nemanjina 31 \",\n        \"area\": 150,\n        \"yearOfConstruction\": 2008,\n        \"riskAssesment\": \"80%\",\n        \"startsAt\": \"2020-05-27\",\n        \"expiresAt\": \"2024-01-11\",\n        \"condition\": \"Osiguranje ne pokriva stetu izazvanu namerno \",\n        \"price\": 15000,\n        \"client\": {\n            \"clientId\": 1,\n            \"umcn\": \"1509997787978\",\n            \"forename\": \"Jelena\",\n            \"surname\": \"Krstovic\",\n            \"phone\": \"06388997744\",\n            \"email\": \"kjelena@gmail.com\",\n            \"address\": \"Neznanog junka 15 Beograd\"\n        }\n    },\n    {\n        \"fireInsurancePolicyId\": 2,\n        \"clientId\": 2,\n        \"address\": \"Dudovi 145\",\n        \"area\": 250,\n        \"yearOfConstruction\": 2010,\n        \"riskAssesment\": \"40%\",\n        \"startsAt\": \"2020-05-31\",\n        \"expiresAt\": \"2020-10-31\",\n        \"condition\": \"Osiguranje se odnosi na pozare izazvane strunim instalacijama\",\n        \"price\": 1300,\n        \"client\": {\n            \"clientId\": 2,\n            \"umcn\": \"2609997789976\",\n            \"forename\": \"Nemanja\",\n            \"surname\": \"Milutinovic\",\n            \"phone\": \"06399776655\",\n            \"email\": \"mnemanja@gmail.com\",\n            \"address\": \"Nemanjina 45 Obrenovac\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add a new fire policy crud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"clientId\":1,\n\"address\":\"Dragoslava Srejovica 25 Beograd\",\n\"area\":150,\n\"yearOfConstruction\":2005,\n\"riskAssesment\":\"Visoki rizik od pozara - potkrovlje\",\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"Polisa pokriva troskove krovne strukture\",\n\"price\":12000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/fire",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"fire"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new fire policy crud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"clientId\":1,\n\"address\":\"Dragoslava Srejovica 25 Beograd\",\n\"area\":150,\n\"yearOfConstruction\":2005,\n\"riskAssesment\":\"Visoki rizik od pozara - potkrovlje\",\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"Polisa pokriva troskove krovne strukture\",\n\"price\":12000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/fire",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"fire"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "469"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d5-Zl48tGju1ocqroWHCw89e6WOIgA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 11:56:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fireInsurancePolicyId\": 3,\n    \"clientId\": 1,\n    \"address\": \"Dragoslava Srejovica 25 Beograd\",\n    \"area\": 150,\n    \"yearOfConstruction\": 2005,\n    \"riskAssesment\": \"Visoki rizik od pozara - potkrovlje\",\n    \"startsAt\": \"2020-05-15\",\n    \"expiresAt\": \"2021-05-19\",\n    \"condition\": \"Polisa pokriva troskove krovne strukture\",\n    \"price\": 12000,\n    \"client\": {\n        \"clientId\": 1,\n        \"umcn\": \"1509997787978\",\n        \"forename\": \"Jelena\",\n        \"surname\": \"Krstovic\",\n        \"phone\": \"06388997744\",\n        \"email\": \"kjelena@gmail.com\",\n        \"address\": \"Neznanog junka 15 Beograd\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new fire policy with checked umcn",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"umcn\":\"1509997796325\",\r\n    \"address\":\"8. marta 11 Simanovci\",\r\n    \"area\":150,\r\n    \"yearOfConstruction\":2015,\r\n    \"riskAssesment\":\"Srednji rizik od pozara\",\r\n    \"startsAt\":\"2020-05-16\",\r\n    \"expiresAt\":\"2021-05-16\",\r\n    \"price\":12000,\r\n    \"condition\":\"Pozar izazavan eksplozijom plinske boce nece biti osiguran.\"\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/fire",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"fire"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new fire policy with checked umcn and client doesnt exist in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\":\"1509997796325\",\r\n    \"address\":\"8. marta 11 Simanovci\",\r\n    \"area\":150,\r\n    \"yearOfConstruction\":2015,\r\n    \"riskAssesment\":\"Srednji rizik od pozara\",\r\n    \"startsAt\":\"2020-05-16\",\r\n    \"expiresAt\":\"2021-05-16\",\r\n    \"price\":12000,\r\n    \"condition\":\"Pozar izazavan eksplozijom plinske boce nece biti osiguran.\"\r\n    \r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/fire",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"fire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-POMUQrqPksGPX5WsMrnvwtxt4uU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 12:44:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem\"\n}"
+						},
+						{
+							"name": "Add a new fire policy with checked umcn and client exists in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\":\"1509997787978\",\r\n    \"address\":\"8. marta 11 Simanovci\",\r\n    \"area\":150,\r\n    \"yearOfConstruction\":2015,\r\n    \"riskAssesment\":\"Srednji rizik od pozara\",\r\n    \"startsAt\":\"2020-05-16\",\r\n    \"expiresAt\":\"2021-05-16\",\r\n    \"price\":12000,\r\n    \"condition\":\"Pozar izazavan eksplozijom plinske boce nece biti osiguran.\"\r\n    \r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/fire",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"fire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-uMroecK0pjSPnXyrVAh810uB8Lw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 12:43:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clientId\": 1,\n    \"address\": \"8. marta 11 Simanovci\",\n    \"area\": 150,\n    \"riskAssesment\": \"Srednji rizik od pozara\",\n    \"yearOfConstruction\": 2015,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"price\": 12000,\n    \"condition\": \"Pozar izazavan eksplozijom plinske boce nece biti osiguran.\",\n    \"fireInsurancePolicyId\": 4\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNTE0NzI5LjU5LCJpcCI6Ijo6MSIsInVhIjoiUG9zdG1hblJ1bnRpbWUvNy4yNC4xIiwiaWF0IjoxNTg5MzA1MTI5fQ.6fJiMFLGYpVikn5exqgGF8VxamVkHo43FJ69hl3AFvU",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d970cd78-3af4-48be-bbc6-de72ea9d19d8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5476f9a6-feb0-4c3b-9299-38a94a4f053d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Car Policy",
+			"item": [
+				{
+					"name": "Get all car policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all car policies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"car"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "646"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"286-hg82otaS5DsxFxrhs7eHMUpMrBE\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 11:59:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"carInsurancePolicyId\": 1,\n        \"clientId\": 2,\n        \"manufacturer\": \"Audi\",\n        \"model\": \"A4\",\n        \"yearOfProduction\": 2012,\n        \"vin\": \"JM1NB3538TO153757\",\n        \"milage\": 150600,\n        \"registrationNumber\": \"BG-1188-KK\",\n        \"startsAt\": \"2020-05-21\",\n        \"expiresAt\": \"2020-11-15\",\n        \"price\": 15000,\n        \"condition\": \"Osiguranje vazi samo u uslovima totalne stete\"\n    },\n    {\n        \"carInsurancePolicyId\": 2,\n        \"clientId\": 1,\n        \"manufacturer\": \"Seat\",\n        \"model\": \"Ibiza\",\n        \"yearOfProduction\": 2017,\n        \"vin\": \"JM1NB3538TO153999\",\n        \"milage\": 16900,\n        \"registrationNumber\": \"BG-1186-HJ\",\n        \"startsAt\": \"2020-05-12\",\n        \"expiresAt\": \"2021-03-18\",\n        \"price\": 42000,\n        \"condition\": \"Osiguranje obuhvata kradju, ostecenja izazvana prirodnim nepogodama i saobracajnim nezgodama\"\n    }\n]"
+						},
+						{
+							"name": "Get a single car policy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/car/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"car",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "297"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"129-SIQOFcwUnSUobYrtaVf99ttWsjM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:00:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carInsurancePolicyId\": 1,\n    \"clientId\": 2,\n    \"manufacturer\": \"Audi\",\n    \"model\": \"A4\",\n    \"yearOfProduction\": 2012,\n    \"vin\": \"JM1NB3538TO153757\",\n    \"milage\": 150600,\n    \"registrationNumber\": \"BG-1188-KK\",\n    \"startsAt\": \"2020-05-21\",\n    \"expiresAt\": \"2020-11-15\",\n    \"price\": 15000,\n    \"condition\": \"Osiguranje vazi samo u uslovima totalne stete\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new car policy crud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"clientId\":2,\n\"manufacturer\":\"BMW\",\n\"model\":\"M2\",\n\"yearOfProduction\":2019,\n\"vin\":\"WSSZZZ1659HHJJ123\",\n\"milage\":150000,\n\"registrationNumber\":\"BG-1199-HK\",\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"Polisa pokriva i troskove slep sluzbe \",\n\"price\":25000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new car policy crud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"clientId\":2,\n\"manufacturer\":\"BMW\",\n\"model\":\"M2\",\n\"yearOfProduction\":2019,\n\"vin\":\"WSSZZZ1659HHJJ123\",\n\"milage\":150000,\n\"registrationNumber\":\"BG-1199-HK\",\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"Polisa pokriva i troskove slep sluzbe \",\n\"price\":25000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"car"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "289"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"121-T2uSRF9HgybbKGCq42boKeLzlnc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:05:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"carInsurancePolicyId\": 3,\n    \"clientId\": 2,\n    \"manufacturer\": \"BMW\",\n    \"model\": \"M2\",\n    \"yearOfProduction\": 2019,\n    \"vin\": \"WSSZZZ1659HHJJ123\",\n    \"milage\": 150000,\n    \"registrationNumber\": \"BG-1199-HK\",\n    \"startsAt\": \"2020-05-15\",\n    \"expiresAt\": \"2021-05-19\",\n    \"price\": 25000,\n    \"condition\": \"Polisa pokriva i troskove slep sluzbe \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new car policy with cheked umcn  and client exists in database",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"umcn\":\"2609997555555\",\r\n    \"manufacturer\":\"BMW\",\r\n    \"model\":\"320d\",\r\n    \"yearOfProduction\":2015,\r\n    \"vin\":\"SDKASJLGF46515361SDN\",\r\n    \"milage\":156999,\r\n    \"registrationNumber\":\"RU-065-CC\",\r\n    \"startsAt\":\"2020-05-15\",\r\n    \"expiresAt\":\"2020-11-05\",\r\n    \"price\":1369,\r\n    \"condition\":\"Polisa vazi na teritroiji Evropske Unije\"\r\n    \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new car policy with cheked umcn  ",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\":\"2609997789976\",\r\n    \"manufacturer\":\"BMW\",\r\n    \"model\":\"320d\",\r\n    \"yearOfProduction\":2015,\r\n    \"vin\":\"SDKASJLGF46515361SDN\",\r\n    \"milage\":156999,\r\n    \"registrationNumber\":\"RU-065-CC\",\r\n    \"startsAt\":\"2020-05-15\",\r\n    \"expiresAt\":\"2020-11-05\",\r\n    \"price\":1369,\r\n    \"condition\":\"Polisa vazi na teritroiji Evropske Unije\"\r\n    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"car"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "294"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"126-WGGZixTzTjkOi9VhSDsqV9b3tcY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 12:33:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clientId\": 2,\n    \"manufacturer\": \"BMW\",\n    \"milage\": 156999,\n    \"model\": \"320d\",\n    \"registrationNumber\": \"RU-065-CC\",\n    \"vin\": \"SDKASJLGF46515361SDN\",\n    \"yearOfProduction\": 2015,\n    \"startsAt\": \"2020-05-15\",\n    \"expiresAt\": \"2020-11-05\",\n    \"price\": 1369,\n    \"condition\": \"Polisa vazi na teritroiji Evropske Unije\",\n    \"carInsurancePolicyId\": 4\n}"
+						},
+						{
+							"name": "Add a new car policy with cheked umcn  and client doesnt exist in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\":\"2609997555555\",\r\n    \"manufacturer\":\"BMW\",\r\n    \"model\":\"320d\",\r\n    \"yearOfProduction\":2015,\r\n    \"vin\":\"SDKASJLGF46515361SDN\",\r\n    \"milage\":156999,\r\n    \"registrationNumber\":\"RU-065-CC\",\r\n    \"startsAt\":\"2020-05-15\",\r\n    \"expiresAt\":\"2020-11-05\",\r\n    \"price\":1369,\r\n    \"condition\":\"Polisa vazi na teritroiji Evropske Unije\"\r\n    \r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/car",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"car"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-POMUQrqPksGPX5WsMrnvwtxt4uU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 12:36:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Accident Policy",
+			"item": [
+				{
+					"name": "Get all accident policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/accident",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accident"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a single accident policy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/accident/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"accident",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "167"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a7-bqUOQlaVnVQ5q0cNOIkh3QtzIB0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:07:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accidentPolicyId\": 1,\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-20\",\n    \"expiresAt\": \"2020-12-27\",\n    \"price\": 1580,\n    \"condition\": \"Specijalan popust od 50% ukoliko ne bude dodatnih steta\"\n}"
+						},
+						{
+							"name": "Get all accident policies ",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/accident",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"accident"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "532"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"214-Uy8EDmd7PYivKXci13biS7+4RLA\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:06:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"accidentPolicyId\": 1,\n        \"clientId\": 1,\n        \"startsAt\": \"2020-05-20\",\n        \"expiresAt\": \"2020-12-27\",\n        \"price\": 1580,\n        \"condition\": \"Specijalan popust od 50% ukoliko ne bude dodatnih steta\"\n    },\n    {\n        \"accidentPolicyId\": 2,\n        \"clientId\": 2,\n        \"startsAt\": \"2020-05-28\",\n        \"expiresAt\": \"2021-02-21\",\n        \"price\": 22850,\n        \"condition\": \"Ukoliko klijent isplati celokupan iznos u kesu dobija popust od 20%\"\n    },\n    {\n        \"accidentPolicyId\": 3,\n        \"clientId\": 2,\n        \"startsAt\": \"2020-05-25\",\n        \"expiresAt\": \"2024-05-18\",\n        \"price\": 125899,\n        \"condition\": \"Ukoliko klijent isplati celokupan iznos u kesu dobija popust od 10%\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add a new accident policy crud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"clientId\":2,\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"U slucaju prirodne nepogode polisa vazi samo za evropske zemlje \",\n\"price\":25000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/accident",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accident"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new car policy crud Copy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"clientId\":2,\n\"startsAt\":\"2020-05-15\",\n\"expiresAt\":\"2021-05-19\",\n\"condition\":\"U slucaju prirodne nepogode polisa vazi samo za evropske zemlje \",\n\"price\":25000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/accident",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"accident"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b1-yfdI1dPNOU7kDbMzW66e+S50nSM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:09:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accidentPolicyId\": 4,\n    \"clientId\": 2,\n    \"startsAt\": \"2020-05-15\",\n    \"expiresAt\": \"2021-05-19\",\n    \"price\": 25000,\n    \"condition\": \"U slucaju prirodne nepogode polisa vazi samo za evropske zemlje \"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new accident policy with umcn check",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"umcn\":\"1509997785555\",\n\t\"startsAt\":\"2020-05-15\",\n\t\"expiresAt\":\"2021-05-15\",\n\t\"price\":1269,\n\t\"condition\":\"Ble bsdhaskljfa\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/accident",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accident"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new accident policy with umcn check and client doesnt exist in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"umcn\":\"1509997785555\",\n\t\"startsAt\":\"2020-05-15\",\n\t\"expiresAt\":\"2021-05-15\",\n\t\"price\":1269,\n\t\"condition\":\"Ble bsdhaskljfa\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/accident",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"accident"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-POMUQrqPksGPX5WsMrnvwtxt4uU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 09:30:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem\"\n}"
+						},
+						{
+							"name": "Add a new accident policy with umcn check and client exists in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"umcn\":\"1509997787978\",\n\t\"startsAt\":\"2020-05-15\",\n\t\"expiresAt\":\"2021-05-15\",\n\t\"price\":1269,\n\t\"condition\":\"Ble bsdhaskljfa\"\n\t\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/accident",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"accident"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7f-nhMTKsHYmvc8B3RW6EiHtaDeOnM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 09:29:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clientId\": 1,\n    \"startsAt\": \"2020-05-15\",\n    \"expiresAt\": \"2021-05-15\",\n    \"price\": 1269,\n    \"condition\": \"Ble bsdhaskljfa\",\n    \"accidentPolicyId\": 6\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Crop Policy",
+			"item": [
+				{
+					"name": "Create full crop insurance policy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"umcn\" : \"2609997789976\" ,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"crops\" : [\r\n        {\"typeOfCropId\":1, \"areaUnderCulture\":150},\r\n        {\"typeOfCropId\":2, \"areaUnderCulture\":150}\r\n    ]\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/crop/createFull",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crop",
+								"createFull"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create full crop insurance policy with umcn check and client exits in database",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\" : \"2609997789976\" ,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"crops\" : [\r\n        {\"typeOfCropId\":1, \"areaUnderCulture\":150},\r\n        {\"typeOfCropId\":2, \"areaUnderCulture\":150}\r\n    ]\r\n\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/crop/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"crop",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"132-zpbKhh/LbaPYUfZiw9V8M5qMTcc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 10:17:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cropInsurancePolicyId\": 3,\n    \"clientId\": 2,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"price\": 15896,\n    \"condition\": \"Neki uslov\",\n    \"client\": {\n        \"clientId\": 2,\n        \"umcn\": \"2609997789976\",\n        \"forename\": \"Nemanja\",\n        \"surname\": \"Milutinovic\",\n        \"phone\": \"06399776655\",\n        \"email\": \"mnemanja@gmail.com\",\n        \"address\": \"Nemanjina 45 Obrenovac\"\n    }\n}"
+						},
+						{
+							"name": "Create full crop insurance policy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientId\" : 2 ,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"crops\" : [\r\n        {\"typeOfCropId\":1, \"areaUnderCulture\":150}\r\n    ]\r\n\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/crop/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"crop",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"132-MCFZIcXOj5e5q25EUWhX3EMChhw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 12:59:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cropInsurancePolicyId\": 1,\n    \"clientId\": 2,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"price\": 15896,\n    \"condition\": \"Neki uslov\",\n    \"client\": {\n        \"clientId\": 2,\n        \"umcn\": \"2609997789976\",\n        \"forename\": \"Nemanja\",\n        \"surname\": \"Milutinovic\",\n        \"phone\": \"06399776655\",\n        \"email\": \"mnemanja@gmail.com\",\n        \"address\": \"Nemanjina 45 Obrenovac\"\n    }\n}"
+						},
+						{
+							"name": "Create full crop insurance policy with umcn check and client dooesnt exist in database",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"umcn\" : \"1234567891234\" ,\r\n    \"startsAt\": \"2020-05-16\",\r\n    \"expiresAt\": \"2021-05-16\",\r\n    \"condition\": \"Neki uslov\",\r\n    \"price\": 15896,\r\n    \"crops\" : [\r\n        {\"typeOfCropId\":1, \"areaUnderCulture\":150}\r\n    ]\r\n\r\n\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/crop/createFull",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"crop",
+										"createFull"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"88-POMUQrqPksGPX5WsMrnvwtxt4uU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 10:16:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"statusCode\": -1004,\n    \"message\": \"Ne postoji klijent sa unetim maticnim brojem, morate uneti podatke o klijentu u sistem\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all crop policies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/crop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"crop"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get a single  crop policy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/crop/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"crop",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "128"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"80-XbijUa9Fbry0y33MAvpa+EXHQJ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:48:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cropInsurancePolicyId\": 1,\n    \"clientId\": 2,\n    \"startsAt\": \"2020-05-16\",\n    \"expiresAt\": \"2021-05-16\",\n    \"price\": 15896,\n    \"condition\": \"Neki uslov\"\n}"
+						},
+						{
+							"name": "Get all crop policies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/crop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"crop"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "388"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"184-AwXtaQKXuYSFsanb86NpQColoEM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:48:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"cropInsurancePolicyId\": 1,\n        \"clientId\": 2,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"price\": 15896,\n        \"condition\": \"Neki uslov\"\n    },\n    {\n        \"cropInsurancePolicyId\": 2,\n        \"clientId\": 2,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"price\": 15896,\n        \"condition\": \"Neki uslov\"\n    },\n    {\n        \"cropInsurancePolicyId\": 3,\n        \"clientId\": 2,\n        \"startsAt\": \"2020-05-16\",\n        \"expiresAt\": \"2021-05-16\",\n        \"price\": 15896,\n        \"condition\": \"Neki uslov\"\n    }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Condition",
+			"item": [
+				{
+					"name": "Add a new condition",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"policyTipe\":\"fasfaasdasda\",\n\t\"text\":\"Uslovi za polisu posledica nesrecnog slucaja\",\n\t\"createdAt\":\"2020-05-13 15:51:55\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/condition",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"condition"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a new condition",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"policyTipe\":\"accident\",\n\t\"text\":\"Uslovi za polisu posledica nesrecnog slucaja\",\n\t\"createdAt\":\"2020-05-13 15:51:55\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/condition",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"condition"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"86-JC1d6G3vEvsQdinbNG9KnTWPzNc\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 13 May 2020 13:51:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"conditionId\": 2,\n    \"policyTipe\": \"fgfdsgbfdsgsfds\",\n    \"text\": \"Uslovi za polisu posledica nesrecnog slucaja\",\n    \"createdAt\": \"2020-05-13T13:51:55.000Z\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Type of crop",
+			"item": [
+				{
+					"name": "Get all type of crops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/typeOfCrop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"typeOfCrop"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all type of crops",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/typeOfCrop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"typeOfCrop"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "291"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"123-67/dUyYbq+E/bYrqvxZDT2h10j8\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:02:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"typeOfCropId\": 1,\n        \"name\": \"Psenica\",\n        \"isSubsidized\": 1,\n        \"subsidyProgram\": \"Zitarice 2019/2020\",\n        \"sourceOfFinance\": \"Budzet Republike Srbije\",\n        \"pricePerMonthPerAcre\": 20000\n    },\n    {\n        \"typeOfCropId\": 2,\n        \"name\": \"Grozdje\",\n        \"isSubsidized\": 0,\n        \"subsidyProgram\": null,\n        \"sourceOfFinance\": null,\n        \"pricePerMonthPerAcre\": 6000\n    }\n]"
+						},
+						{
+							"name": "Get a single type of crop",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/typeOfCrop/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"typeOfCrop",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "163"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a3-N+HkZaGJxNFloSaspXIhSbB+2o4\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 13:03:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"typeOfCropId\": 1,\n    \"name\": \"Psenica\",\n    \"isSubsidized\": 1,\n    \"subsidyProgram\": \"Zitarice 2019/2020\",\n    \"sourceOfFinance\": \"Budzet Republike Srbije\",\n    \"pricePerMonthPerAcre\": 20000\n}"
+						}
+					]
+				},
+				{
+					"name": "Add type of crop",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"jecam\",\n\t\"isSubsidized\":0,\n\t\"subsidyProgram\" : null,\n\t\"sourceOfFinance\":null,\n\t\"pricePerMonthPerAcre\":1500\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/typeOfCrop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"typeOfCrop"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add type of crop",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"jecam\",\n\t\"isSubsidized\":0,\n\t\"subsidyProgram\" : null,\n\t\"sourceOfFinance\":null,\n\t\"pricePerMonthPerAcre\":1500\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/typeOfCrop",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"typeOfCrop"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-ds49J7g40gfVyqEwYsDRgvyHRvI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 14:08:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"typeOfCropId\": 3,\n    \"name\": \"jecam\",\n    \"isSubsidized\": 0,\n    \"subsidyProgram\": null,\n    \"sourceOfFinance\": null,\n    \"pricePerMonthPerAcre\": 1500\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit type of crop",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"isSubsidized\":0,\n\t\"subsidyProgram\" : null,\n\t\"sourceOfFinance\":null,\n\t\"pricePerMonthPerAcre\":2000\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/typeOfCrop/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"typeOfCrop",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit type of crop",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"isSubsidized\":0,\n\t\"subsidyProgram\" : null,\n\t\"sourceOfFinance\":null,\n\t\"pricePerMonthPerAcre\":2000\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/typeOfCrop/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"typeOfCrop",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-TyEV6gdzmkH5LrrW5FrLiCB5xBU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 14:11:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"typeOfCropId\": 3,\n    \"name\": \"jecam\",\n    \"isSubsidized\": 0,\n    \"subsidyProgram\": null,\n    \"sourceOfFinance\": null,\n    \"pricePerMonthPerAcre\": 2000\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Country",
+			"item": [
+				{
+					"name": "Get all countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/country",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"country"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all countries",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/country",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"country"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13a-3iHNhrWe/CSCMLxnzLV0iYqpnzk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 14:30:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"countryId\": 2,\n        \"name\": \"Bosna i Hercegovina\"\n    },\n    {\n        \"countryId\": 8,\n        \"name\": \"Bugarska\"\n    },\n    {\n        \"countryId\": 7,\n        \"name\": \"Grcka\"\n    },\n    {\n        \"countryId\": 9,\n        \"name\": \"Hrvatska\"\n    },\n    {\n        \"countryId\": 3,\n        \"name\": \"Italija\"\n    },\n    {\n        \"countryId\": 6,\n        \"name\": \"Makedonija\"\n    },\n    {\n        \"countryId\": 5,\n        \"name\": \"Slovenija\"\n    },\n    {\n        \"countryId\": 4,\n        \"name\": \"Spanija\"\n    },\n    {\n        \"countryId\": 1,\n        \"name\": \"Srbija\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add country",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Austrija\"\n\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/country",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"country"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add country",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"Austrija\"\n\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/country",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"country"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-K6qGv1UJv2i5MdByXrbRU6DflJE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 14:33:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"countryId\": 10,\n    \"name\": \"Austrija\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit country",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Republika Austija\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/country/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"country",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit country",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\":\"Republika Austija\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/country/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"country",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-TzCw05sEDRhfgGszloMQvTubJhI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 May 2020 14:35:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"countryId\": 10,\n    \"name\": \"Republika Austija\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZUlkIjo4LCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTkwNDk1MTk2LjA1MywiaXAiOiI6OjEiLCJ1YSI6IlBvc3RtYW5SdW50aW1lLzcuMjQuMSIsImlhdCI6MTU4OTI4NTU5Nn0.wA7DaMgBs5bCEsyF43_5uUZ4y0Spa3D9dIoFfepEFxU",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a2016b11-4df4-4a79-b075-b6ecf43da44b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "09f23b9e-3f02-4361-bbd2-e5b23f0f2d1a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
