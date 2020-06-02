@@ -8,7 +8,7 @@ import {
 } from "typeorm";
 import { CropInsurancePolicy } from "./cropInsurancePolicy.entity";
 import { TypeOfCrop } from "./typeOfCrop.entity";
-
+import * as Validator from 'class-validator';
 @Index(
   "fk_crop_insurance_policy_type_of_crop_crop_insurance_policy_id",
   ["cropInsurancePolicyId"],
@@ -34,7 +34,14 @@ export class CropInsurancePolicyTypeOfCrop {
   @Column({ type: "int",name: "type_of_crop_id", unsigned: true })
   typeOfCropId: number;
 
-  @Column( { type: "double",name: "area_under_culture", precision: 22 })
+  @Column( { type: "double",name: "area_under_culture", precision: 22,scale:2 })
+  @Validator.IsNotEmpty()
+  @Validator.IsPositive()
+  @Validator.IsNumber({
+    allowInfinity:false,
+    allowNaN: false,
+    maxDecimalPlaces: 2
+  })
   areaUnderCulture: number;
 
   @ManyToOne(

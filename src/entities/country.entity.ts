@@ -9,7 +9,7 @@ import {
 } from "typeorm";
 import { TravelInsurancePolicyCountry } from "./travelInsurancePolicy-country.entity";
 import { TravelInsurancePolicy } from "./travelInsurancePolicy.entity";
-
+import * as Validator from 'class-validator';
 @Index("uq_country_name", ["name"], { unique: true })
 @Entity("country")
 export class Country {
@@ -17,6 +17,10 @@ export class Country {
   countryId: number;
 
   @Column({ type: "varchar", unique: true, length: 128 })
+  @Validator.IsNotEmpty()
+  @Validator.IsString()
+  @Validator.Length(2,128)
+
   name: string;
 
    

@@ -5,6 +5,14 @@ import * as jwt from 'jsonwebtoken';
 import { JwtDataEmployeeDto } from "src/dtos/employees/jwt.data.employee.dto";
 import { jwtSecret } from "src/config/jwt.secret";
 
+//nas mw treba da presretne req i pronadje u hederu vrednost kod nas je to authorization 
+//taj string je heshovan sifrovan json objekat koji sadrzi info o tom eko smo mi koji saljemno a da ni mi sami ne znamo sadrzaj tog tokena
+//znamo samo da je pripremnjen od strane app i da joj ga posaljemo i ona utvrdjuje ko smo mi na osnovu njega 
+// poredice da li u tom tokenu stoji info o ip, ua da li se to sve poklapa
+/*
+posto token ima odredjeno vreme vazenja isteci ce i nasa app bice spremna da to utvrdi i kada se to desi
+trazice novi ili ce nas redirectovati na login na nama je da odlucimo sta cemo
+*/ 
 @Injectable() //injektuje se u apply fju consumera
 export class AuthMiddleware implements NestMiddleware{
     constructor(private readonly employeeService:EmployeeService){}

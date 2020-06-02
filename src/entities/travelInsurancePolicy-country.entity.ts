@@ -8,6 +8,7 @@ import {
 } from "typeorm";
 import { Country } from "./country.entity";
 import { TravelInsurancePolicy } from "./travelInsurancePolicy.entity";
+import * as Validator from 'class-validator';
 
 @Index(
   "fk_travel_insurance_policy_country_travel_insurance_policy_id",
@@ -33,6 +34,9 @@ export class TravelInsurancePolicyCountry {
   @Column( { type: "enum",
     enum: ["starting_point", "destination", "transit"],
   })
+  @Validator.IsNotEmpty()
+  @Validator.IsString()
+  @Validator.IsIn(["starting_point", "destination", "transit"])
   type: "starting_point" | "destination" | "transit";
 
   @ManyToOne(

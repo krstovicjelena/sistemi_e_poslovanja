@@ -4,3 +4,4 @@ export const DatabaseConfiguration={
     password: '',
     database: 'osiguravajuca_kuca'
 };
+//konfiguracioni fajl za bazu podataka 

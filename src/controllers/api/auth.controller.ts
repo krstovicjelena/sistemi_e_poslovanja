@@ -36,14 +36,14 @@ export class AuthController{
         jwtData.username=employee.username;
         let sada = new Date();
         sada.setDate(sada.getDate()+14);
-        const istek=sada.getTime()/1000;
+        const istek=sada.getTime()/1000; //konvertovanje u timestamp milisekunde
         jwtData.exp=istek;
         jwtData.ip=req.ip.toString();
         jwtData.ua=req.headers["user-agent"];
 
 
 
-        let token:string=jwt.sign(jwtData.toPlainObject(),jwtSecret); 
+        let token:string=jwt.sign(jwtData.toPlainObject(),jwtSecret); //jwt secret tajni kod za sifrovanje preko koga se sifruje json
 
         const responseObject=new LoginInfoEmployeeDto(
             employee.employeeId,

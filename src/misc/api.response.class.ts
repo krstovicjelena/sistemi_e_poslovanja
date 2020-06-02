@@ -10,3 +10,6 @@ export class ApiResponse{
     }
 
 }
+
+// ovu klasu smo kreirali kako ne bismo imali greske vec ih na neki nacin hvatamo
+//negativne vrednosti status koda su errori pozitivni su warning, a nula da nema greske
