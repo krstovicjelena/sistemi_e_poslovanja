@@ -26,7 +26,8 @@ import { ConditionService } from "src/services/condition/condition.service";
     routes:{
         only:[
             "createOneBase",
-            "createManyBase"
+            "createManyBase",
+            "getManyBase"
           
            
         ]

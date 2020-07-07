@@ -36,6 +36,7 @@ import { CountryController } from './controllers/api/country.controller';
 import { TypeOfCropController } from './controllers/api/typeOfcrop.controller';
 import { CountryService } from './services/country/country.service';
 import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
+import { EmployeeToken } from './entities/employee-token.entity';
 
 
 
@@ -60,7 +61,10 @@ import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
         TravelInsurancePolicy,
         TravelInsurancePolicyCountry,
         TypeOfCrop,
-        AccidentPolicy
+        AccidentPolicy,
+        EmployeeToken
+        
+
       ]
     }),
     TypeOrmModule.forFeature([
@@ -75,7 +79,9 @@ import { TypeOfCropService } from './services/typeOfCrop/typeOfCrop.service';
         TravelInsurancePolicy,
         TravelInsurancePolicyCountry,
         TypeOfCrop,
-        AccidentPolicy
+        AccidentPolicy,
+        EmployeeToken
+        
       
     ])
   ],
