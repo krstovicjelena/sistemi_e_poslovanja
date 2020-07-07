@@ -16,6 +16,14 @@ import { ApiResponse } from "src/misc/api.response.class";
             type:'number',
             primary:true      }
     },
+    query:{
+        join:{
+            client:{
+                eager:true
+            }
+        }
+        
+},
 
     routes:{
         only:[

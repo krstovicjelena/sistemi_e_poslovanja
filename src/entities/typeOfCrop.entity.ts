@@ -4,9 +4,12 @@ import {
   Index,
   OneToMany,
   PrimaryGeneratedColumn,
+  ManyToMany,
+  JoinTable,
 } from "typeorm";
 import { CropInsurancePolicyTypeOfCrop } from "./cropInsurancePolicy-typeOfCrop.entity";
 import * as Validator from 'class-validator';
+import { CropInsurancePolicy } from "./cropInsurancePolicy.entity";
 @Index("uq_type_of_crop_name", ["name"], { unique: true })
 @Entity("type_of_crop")
 export class TypeOfCrop {
@@ -53,4 +56,13 @@ export class TypeOfCrop {
     (cropInsurancePolicyTypeOfCrop) => cropInsurancePolicyTypeOfCrop.typeOfCrop
   )
   cropInsurancePolicyTypeOfCrops: CropInsurancePolicyTypeOfCrop[];
+
+  @ManyToMany(type =>CropInsurancePolicy,cropInsurancePolicy=>cropInsurancePolicy.crops)
+  @JoinTable({
+    name:"crop_insurance_policy_type_of_crop",
+    joinColumn:{name:"type_of_crop_id", referencedColumnName: "typeOfCropId"},
+    inverseJoinColumn:{name:"crop_insurance_policy_id", referencedColumnName: "cropInsurancePolicyId"}
+    
+  })
+  policies: CropInsurancePolicy[];
 }

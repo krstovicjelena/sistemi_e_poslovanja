@@ -16,6 +16,21 @@ import { AddTravelPolicyDto } from "src/dtos/travel/add.travel.dto";
             primary: true
         }
     },
+    query:{
+        join:{
+            client:{
+                eager:true
+            },
+
+            travelInsurancePolicyCountries:{
+                eager:true
+            },
+            countries:{
+                eager:true
+            }
+        }
+        
+},
     routes:{
         only:[
             

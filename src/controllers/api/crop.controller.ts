@@ -17,6 +17,21 @@ import { AddCropPolicyDto } from "src/dtos/crop/add.crop.dto";
             primary: true
         }
     },
+    query:{
+        join:{
+            client:{
+                eager:true
+            },
+
+            cropInsurancePolicyTypeOfCrops:{
+                eager:true
+            },
+            crops:{
+                eager:true
+            }
+        }
+        
+},
     routes:{
         only:[ //dopustanje samo odredjenih ruta a ne svih koje pruza crud
             "getManyBase",

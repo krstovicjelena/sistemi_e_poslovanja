@@ -20,7 +20,7 @@ import { ApiResponse } from "src/misc/api.response.class";
     query:{
         join:{
             client:{
-                eager:false
+                eager:true
             }
 
         }
