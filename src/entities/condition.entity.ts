@@ -26,7 +26,5 @@ export class Condition {
     name: "created_at",
     default: () => "CURRENT_TIMESTAMP",
   })
-  @Validator.IsNotEmpty()
-  @Validator.IsDate()
   createdAt: Date;
 }

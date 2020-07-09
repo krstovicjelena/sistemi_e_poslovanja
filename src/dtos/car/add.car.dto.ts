@@ -42,7 +42,7 @@ export class AddCarDto{
     
     @Validator.IsNotEmpty()
     @Validator.IsString()
-    @Validator.Matches(/^[A-Z]{2}\-[0-9][1-9]{3,5}\-[A-Z]{2}$/)
+   
     @Validator.Length(9,12)
     registrationNumber:string;
 

@@ -69,7 +69,7 @@ export class CarInsurancePolicy {
   @Column({  type: "varchar",name: "registration_number"})
   @Validator.IsNotEmpty()
   @Validator.IsString()
-  @Validator.Matches(/^[A-Z]{2}\-[0-9][1-9]{3,5}\-[A-Z]{2}$/)
+  //@Validator.Matches(/^[A-Z]{2}\-[0-9][1-9]{2,3}\-[A-Z]{2}$/)
   @Validator.Length(9,12)
   registrationNumber: string;
 

@@ -38,7 +38,7 @@ import { EditClientDto } from "src/dtos/client/edit.client.dto";
 export class ClientController{
     constructor(public service: ClientService){}
 
-    @Put()
+    @Post()
     add(@Body() data:AddClientDto): Promise<Client|ApiResponse>{
         return this.service.createClient(data);
 

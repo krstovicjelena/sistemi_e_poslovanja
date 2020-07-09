@@ -17,7 +17,7 @@ export class AddClientDto{
     surname: string;
 
     @Validator.IsString()
-    @Validator.IsPhoneNumber(null)
+    
     @Validator.Length(0,20)
     phone: string;
 

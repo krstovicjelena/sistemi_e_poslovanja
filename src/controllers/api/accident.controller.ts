@@ -1,4 +1,4 @@
-import { Controller, Get, Put, Body } from "@nestjs/common";
+import { Controller, Get, Put, Body, Post } from "@nestjs/common";
 import { Crud } from "@nestjsx/crud";
 import { AccidentPolicy } from "src/entities/accidentPolicy.entity";
 import { AccidentService } from "src/services/accident/accident.service";
@@ -38,7 +38,7 @@ export class AccidentController{
    
 
 
-    @Put()
+    @Post()
     add(@Body() data:AddAccidentDto): Promise<AccidentPolicy|ApiResponse>{
         return this.service.createFullAccident(data);
 
